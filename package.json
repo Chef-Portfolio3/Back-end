@@ -1,0 +1,37 @@
+{
+  "name": "Back-end",
+  "version": "1.0.0",
+  "description": "The most Awesome server for chef-portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nebadon1/Back-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nebadon1/Back-end/issues"
+  },
+  "homepage": "https://github.com/Nebadon1/Back-end#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.4",
+    "knex-cleaner": "^1.3.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.15.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "cross-env": "^6.0.3",
+    "dotenv": "^8.2.0"
+  }
+}
