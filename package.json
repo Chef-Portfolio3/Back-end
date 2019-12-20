@@ -1,5 +1,5 @@
 {
-  "name": "Back-end",
+  "name": "back-end",
   "version": "1.0.0",
   "description": "The most Awesome server for chef-portfolio",
   "main": "index.js",
