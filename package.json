@@ -4,10 +4,10 @@
   "description": "The most Awesome server for chef-portfolio",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index.js",
-    "start": "node index.js"
-  },
+    "server": "nodemon index.js"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nebadon1/Back-end.git"
