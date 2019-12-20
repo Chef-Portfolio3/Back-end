@@ -8,26 +8,34 @@ module.exports = {
     connection: {
       filename: './data/dev.sqlite3'
     }, 
+    useNullAsDefault: true,
+
     migrations: {
       directory: './data/migrations',
     },
+
     seeds: { directory: './data/seeds' },
+
+    Pool:{
+      afterCreate: function(conection, done){
+        connection.run("PRAGMA foreign_keys = ON", done)
+      }
+    }
   },
 
   production: {
     client: 'pg',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
+    connection: process.env.DATABASE_URL,
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
-    }
+      directory: './data/migrations',
+    },
+
+    seeds: { directory: './data/seeds' },
+
   }
 
 };
