@@ -1,9 +1,9 @@
 require('dotenv').config();
 
-const server = require('./server.js');
+const server = require('./server');
 
 const port = process.env.PORT;
 
 server.listen(port, () => {
-  console.log(`Listening on port ${port}...`)
+  console.log(`Get ready for the food!`)
 });
