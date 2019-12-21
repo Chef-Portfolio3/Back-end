@@ -19,7 +19,7 @@
     "url": "https://github.com/Nebadon1/Back-end/issues"
   },
   "engine":{
-    "node": "12.13.1"
+    "node": "12.x"
     },
   "homepage": "https://github.com/Nebadon1/Back-end#readme",
   "dependencies": {
