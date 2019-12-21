@@ -26,13 +26,14 @@ router.get("/all", (req, res) => {
       res.status(500).json({ error: "The posts could not be retrieved." });
     });
 });
-
+//readd restricted,
 router.get("/:id", restricted, (req, res) => {
   const { id } = req.params;
+  console.log(req.params)
 
   db("posts")
     .returning("id")
-    .where({ id, user_id: req.decodedToken.subject })
+     .where({ id, user_id: req.decodedToken.subject })
     .first()
     .then(post => {
       if (post) {
@@ -54,6 +55,7 @@ router.get("/:id", restricted, (req, res) => {
 
 router.post("/", restricted, (req, res) => {
   const post = req.body;
+      console.log(req.body)
 
   if (!post.chef_name) {
     res
