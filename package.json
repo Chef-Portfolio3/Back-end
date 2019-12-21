@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "the best backend",
   "main": "index.js",
+  "engines":{
+    "node": "12.13.1"
+    },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon index.js",
@@ -18,9 +21,7 @@
   "bugs": {
     "url": "https://github.com/Nebadon1/Back-end/issues"
   },
-  "engine":{
-    "node": "12.13.1"
-    },
+  
   "homepage": "https://github.com/Nebadon1/Back-end#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
